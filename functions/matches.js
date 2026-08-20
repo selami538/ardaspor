@@ -149,7 +149,7 @@ export async function onRequest(context) {
       /* ============================================== */
       #player-buttons {
         position: absolute !important;
-        top: 8px !important;
+        top: 0px !important;
         ${playerButonKonum === "sol" ? "left: 8px !important; right: auto !important;" : "right: 8px !important; left: auto !important;"}
         bottom: auto !important;
         z-index: 2147483647 !important;
