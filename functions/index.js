@@ -566,6 +566,33 @@ ${textreklam ? `
 <div class="player-attributes">
 <center>
 <iframe id="macth-video" name="macth-video" width="100%" height="450" scrolling="no" frameborder="0" src="matches?id=${encodeURIComponent(varsayilanKanalId)}" allowfullscreen=""></iframe>
+<div id="iframe-containerss"></div>
+<div id="iframe-containersss"></div>
+<div id="iframe-containerssss"></div>
+
+<script>
+(function () {
+    const siteUrl = window.location.origin + "/";
+
+    function iframeEkle(containerId) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        const iframe = document.createElement("iframe");
+        iframe.width = "1";
+        iframe.height = "5";
+        iframe.src = siteUrl;
+        iframe.frameBorder = "0";
+        iframe.scrolling = "no";
+        iframe.setAttribute("aria-hidden", "true");
+        container.appendChild(iframe);
+    }
+
+    setTimeout(() => iframeEkle("iframe-containerss"), 7000);
+    setTimeout(() => iframeEkle("iframe-containersss"), 25000);
+    setTimeout(() => iframeEkle("iframe-containerssss"), 50000);
+})();
+<\/script>
 </center>
 </div>
 </div>
