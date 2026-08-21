@@ -170,7 +170,7 @@ export async function onRequest(context) {
       }
 
       #player-buttons.tam-ekran-butonlari {
-        top: 12px !important;
+        top: 0px !important;
       }
 
       #player-buttons .p-btn {
@@ -351,7 +351,7 @@ export async function onRequest(context) {
 
           // Normal görünümde eski 8 px değeri kullanılsın
           btns.classList.remove("tam-ekran-butonlari");
-          btns.style.setProperty("top", "0px", "important");
+          btns.style.setProperty("top", "8px", "important");
         }
       }
       document.addEventListener("fullscreenchange", tamEkranButonDuzelt);
