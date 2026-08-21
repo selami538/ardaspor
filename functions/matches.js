@@ -345,7 +345,7 @@ export async function onRequest(context) {
 
           // Tam ekranda ekranın üstünden 12 px boşluk bırak
           btns.classList.add("tam-ekran-butonlari");
-          btns.style.setProperty("top", "12px", "important");
+          btns.style.setProperty("top", "0px", "important");
         } else {
           playerEl.appendChild(btns);
 
