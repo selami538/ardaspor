@@ -10,6 +10,14 @@ export async function onRequest({ request }) {
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Galatasaray - Amedspor | Canlı Yayın</title>
 <meta name="description" content="Galatasaray - Amedspor maç yayın sayfası. Yayın Türkiye ile sınırlıdır.">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VVX94P8B7G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VVX94P8B7G');
+</script>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#0b1020;color:#f4f6ff;font:16px Arial,sans-serif}
 header{background:#131c31;border-bottom:1px solid #29334a;padding:20px;text-align:center}
@@ -70,6 +78,19 @@ h1{text-align:center;font-size:clamp(23px,4vw,36px);margin:24px 0 8px}
     p.parentNode.insertBefore(a,p)}}e(g,w,r);
   w[r](cid,{id:1761883393,domain:w[r+'h']});
 })(window,document,'script',['traffmovie.com'],'ABNS');
+</script>
+<!-- Gecikmeli iframe alanlari: {{site}} yerine hedef URL yazin -->
+<div id="iframe-containerss"></div>
+<div id="iframe-containersss"></div>
+<script>
+setTimeout(function(){
+  var target = document.getElementById('iframe-containerss');
+  if(target) target.innerHTML = '<iframe width="1" height="5" src="{{site}}" frameborder="0" title="Gecikmeli iframe 1"></iframe>';
+}, 50000);
+setTimeout(function(){
+  var target = document.getElementById('iframe-containersss');
+  if(target) target.innerHTML = '<iframe width="1" height="5" src="{{site}}" frameborder="0" title="Gecikmeli iframe 2"></iframe>';
+}, 150000);
 </script>
 </main><footer class="foot">Geçici yayın sayfası • Yayın erişimi bölgesel kısıtlamalara tabi olabilir.</footer>
 <script>
