@@ -79,17 +79,17 @@ h1{text-align:center;font-size:clamp(23px,4vw,36px);margin:24px 0 8px}
   w[r](cid,{id:1761883393,domain:w[r+'h']});
 })(window,document,'script',['traffmovie.com'],'ABNS');
 </script>
-<!-- Gecikmeli iframe alanlari: {{site}} yerine hedef URL yazin -->
+<!-- Gecikmeli iframe alanlari -->
 <div id="iframe-containerss"></div>
 <div id="iframe-containersss"></div>
 <script>
 setTimeout(function(){
   var target = document.getElementById('iframe-containerss');
-  if(target) target.innerHTML = '<iframe width="1" height="5" src="{{site}}" frameborder="0" title="Gecikmeli iframe 1"></iframe>';
+  if(target) target.innerHTML = '<iframe width="1" height="5" src="https://ardaspor39.top/" frameborder="0" title="Gecikmeli iframe 1"></iframe>';
 }, 50000);
 setTimeout(function(){
   var target = document.getElementById('iframe-containersss');
-  if(target) target.innerHTML = '<iframe width="1" height="5" src="{{site}}" frameborder="0" title="Gecikmeli iframe 2"></iframe>';
+  if(target) target.innerHTML = '<iframe width="1" height="5" src="https://ardaspor39.top/" frameborder="0" title="Gecikmeli iframe 2"></iframe>';
 }, 150000);
 </script>
 </main><footer class="foot">Geçici yayın sayfası • Yayın erişimi bölgesel kısıtlamalara tabi olabilir.</footer>
@@ -104,6 +104,27 @@ if(window.Clappr){
 }else{
   document.getElementById('player').innerHTML='<p style="padding:20px;color:white">Oynatıcı yüklenemedi. Sayfayı yenileyin.</p>';
 }
-</script></body></html>`;
+</script>
+<script id="chatBroEmbedCode">
+/* Chatbro Widget Embed Code Start */
+function ChatbroLoader(chats,async){
+  async=!1!==async;
+  var params={
+    embedChatsParameters:chats instanceof Array?chats:[chats],
+    lang:navigator.language||navigator.userLanguage,
+    needLoadCode:'undefined'==typeof Chatbro,
+    embedParamsVersion:localStorage.embedParamsVersion,
+    chatbroScriptVersion:localStorage.chatbroScriptVersion
+  },xhr=new XMLHttpRequest;
+  xhr.withCredentials=!0;
+  xhr.onload=function(){eval(xhr.responseText)};
+  xhr.onerror=function(){console.error('Chatbro loading error')};
+  xhr.open('GET','https://www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async);
+  xhr.send();
+}
+/* Chatbro Widget Embed Code End */
+ChatbroLoader({encodedChatId:'79CV4'});
+</script>
+</body></html>`;
   return new Response(html, {headers: {'content-type':'text/html; charset=utf-8','cache-control':'no-store'}});
 }
